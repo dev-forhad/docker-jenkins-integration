@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mMOc0T3Oz/9KqfvQ3pRjPRY/ruNwHBKvzEJbG9Wadns=",
+  "Source": "DockerJenkinsInegration",
+  "BasePath": "_content/DockerJenkinsInegration",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
