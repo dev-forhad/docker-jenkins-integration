@@ -312,19 +312,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Forhad\\.nuget\\packages\\": {}
+    "C:\\Users\\forhad.hussain\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Jenkins\\DockerJenkinsInegration\\DockerJenkinsInegration\\DockerJenkinsInegration.csproj",
+      "projectUniqueName": "H:\\Jenkins\\Project\\docker-jenkins-integration\\DockerJenkinsInegration\\DockerJenkinsInegration.csproj",
       "projectName": "DockerJenkinsInegration",
-      "projectPath": "E:\\Jenkins\\DockerJenkinsInegration\\DockerJenkinsInegration\\DockerJenkinsInegration.csproj",
-      "packagesPath": "C:\\Users\\Forhad\\.nuget\\packages\\",
-      "outputPath": "E:\\Jenkins\\DockerJenkinsInegration\\DockerJenkinsInegration\\obj\\",
+      "projectPath": "H:\\Jenkins\\Project\\docker-jenkins-integration\\DockerJenkinsInegration\\DockerJenkinsInegration.csproj",
+      "packagesPath": "C:\\Users\\forhad.hussain\\.nuget\\packages\\",
+      "outputPath": "H:\\Jenkins\\Project\\docker-jenkins-integration\\DockerJenkinsInegration\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Forhad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\forhad.hussain\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -370,6 +370,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -378,7 +396,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

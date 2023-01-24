@@ -9,36 +9,49 @@ namespace DockerJenkinsInegration.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        // GET: api/<ProductsController>
+        // In-memory list of products for demonstration purposes
+        private static List<Product> products = new List<Product>
+        {
+            new Product { Id = 1, Name = "Product 1", Quantity = 10, Price = 9.99m, Description = "This is the first product" },
+            new Product { Id = 2, Name = "Product 2", Quantity = 20, Price = 19.99m, Description = "This is the second product" },
+            new Product { Id = 3, Name = "Product 3", Quantity = 30, Price = 29.99m, Description = "This is the third product" }
+        };
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Product> Get()
         {
-            return new string[] { "value1", "value2" };
+            return products;
         }
 
-        // GET api/<ProductsController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Product Get(int id)
         {
-            return "value";
+            return products.FirstOrDefault(p => p.Id == id);
         }
 
-        // POST api/<ProductsController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Product product)
         {
+            products.Add(product);
         }
 
-        // PUT api/<ProductsController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody] Product product)
         {
+            var existingProduct = products.FirstOrDefault(p => p.Id == id);
+            if (existingProduct != null)
+            {
+                existingProduct.Name = product.Name;
+                existingProduct.Quantity = product.Quantity;
+                existingProduct.Price = product.Price;
+                existingProduct.Description = product.Description;
+            }
         }
 
-        // DELETE api/<ProductsController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            products.RemoveAll(p => p.Id == id);
         }
     }
 }
